@@ -1,4 +1,4 @@
-const palette = {
+export default {
   background: {
     default: '#FFFFFF',
   },
@@ -6,5 +6,3 @@ const palette = {
     main: '#2F6966',
   },
 };
-
-export default palette;

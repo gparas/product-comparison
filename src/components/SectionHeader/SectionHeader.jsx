@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 const SectionHeader = ({ header, subheader }) => {
   return (
     <header>
-      <Typography variant="h5">{header}</Typography>
+      <Typography variant="h3">{header}</Typography>
       <Typography>{subheader}</Typography>
     </header>
   );
