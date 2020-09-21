@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
+import useStyles from './styles';
 
 const SectionHeader = ({ header, subheader }) => {
+  const classes = useStyles();
   return (
-    <header>
+    <header className={classes.root}>
       <Typography variant="h3">{header}</Typography>
       <Typography>{subheader}</Typography>
     </header>
