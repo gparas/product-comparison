@@ -10,10 +10,12 @@ const useStyles = makeStyles(
       backgroundPosition: 'center',
       paddingTop: theme.spacing(30),
       paddingBottom: theme.spacing(3),
-      marginBottom: theme.spacing(6),
       [theme.breakpoints.down('sm')]: {
         paddingTop: theme.spacing(20),
       },
+    },
+    gutterBottom: {
+      marginBottom: theme.spacing(3),
     },
   }),
   { name: 'Hero' }

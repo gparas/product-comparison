@@ -9,8 +9,10 @@ const theme = createMuiTheme({
   typography,
   props,
   shape: {
-    borderRadius: 2,
+    borderRadius: 8,
   },
 });
+
+window.theme = theme;
 
 export default theme;

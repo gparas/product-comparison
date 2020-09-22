@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import InputBase from '@material-ui/core/InputBase';
@@ -28,6 +29,10 @@ const SearchForm = ({ placeholder }) => {
       </Button>
     </Paper>
   );
+};
+
+SearchForm.propTypes = {
+  placeholder: PropTypes.string,
 };
 
 export default SearchForm;
