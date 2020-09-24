@@ -6,19 +6,20 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import Typography from '@material-ui/core/Typography';
+import C from './constants';
 
 const ProductList = () => {
   return (
-    <List>
-      {Array.from(new Array(5)).map((_, index) => (
-        <ListItem divider key={index}>
+    <List disablePadding>
+      {C.LIST.map((item, index) => (
+        <ListItem divider={C.LIST[index + 1]} key={index}>
           <ListItemAvatar>
             <Avatar variant="rounded">P</Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Product name" />
+          <ListItemText primary={item.text} />
           <ListItemSecondaryAction>
             <Typography variant="body2" color="textSecondary">
-              <b>12</b>
+              <b>{item.count}</b>
             </Typography>
           </ListItemSecondaryAction>
         </ListItem>

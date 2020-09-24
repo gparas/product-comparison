@@ -18,6 +18,30 @@ const DETAILS = [
   },
 ];
 
+const LIST = [
+  {
+    count: 24,
+    text: 'Product name',
+  },
+  {
+    count: 9,
+    text: 'Product name',
+  },
+  {
+    count: 12,
+    text: 'Product name',
+  },
+  {
+    count: 32,
+    text: 'Product name',
+  },
+  {
+    count: 2,
+    text: 'Product name',
+  },
+];
+
 export default {
   DETAILS,
+  LIST,
 };

@@ -21,8 +21,8 @@ const Details = () => {
           <Typography gutterBottom>
             <b>Header</b>
           </Typography>
-          {C.DETAILS.map((item) => (
-            <IconText icon={item.icon}>
+          {C.DETAILS.map((item, i) => (
+            <IconText key={`category-${i}`} icon={item.icon}>
               {item.count} {item.text}
             </IconText>
           ))}

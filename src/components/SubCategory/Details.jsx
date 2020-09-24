@@ -8,8 +8,8 @@ const Details = () => {
   return (
     <Grid container spacing={2}>
       <Grid item>
-        {C.DETAILS.slice(0, 2).map((item) => (
-          <IconText icon={item.icon}>
+        {C.DETAILS.slice(0, 2).map((item, i) => (
+          <IconText key={`sub-category-left-${i}`} icon={item.icon}>
             {item.count} {item.text}
           </IconText>
         ))}
@@ -18,8 +18,8 @@ const Details = () => {
         <Divider orientation="vertical" />
       </Grid>
       <Grid item>
-        {C.DETAILS.slice(2, 4).map((item) => (
-          <IconText icon={item.icon}>
+        {C.DETAILS.slice(2, 4).map((item, i) => (
+          <IconText key={`sub-category-right-${i}`} icon={item.icon}>
             {item.count} {item.text}
           </IconText>
         ))}

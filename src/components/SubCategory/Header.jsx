@@ -13,7 +13,7 @@ const Details = () => {
           N
         </Avatar>
       </Grid>
-      <Grid item>
+      <Grid item xs>
         <Typography gutterBottom>
           <b>Best headphones below 100€</b>
         </Typography>
