@@ -8,7 +8,7 @@ const useStyles = makeStyles(
     },
     divider: {
       marginTop: theme.spacing(6),
-      marginBottom: theme.spacing(6),
+      marginBottom: theme.spacing(3),
     },
   }),
   { name: 'Footer' }

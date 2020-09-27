@@ -11,7 +11,7 @@ const Categories = ({ header }) => {
       />
       <Grid container spacing={3}>
         {Array.from(new Array(6)).map((_, index) => (
-          <Grid item sm={4} key={index}>
+          <Grid item xs={12} sm={4} key={index}>
             <SubCategory />
           </Grid>
         ))}

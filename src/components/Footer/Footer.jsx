@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className={classes.root}>
       <Container>
         <Divider className={classes.divider} />
-        <Grid container justify="space-between">
+        <Grid container justify="space-between" alignItems="center">
           <Grid item>
             <Logo />
           </Grid>
