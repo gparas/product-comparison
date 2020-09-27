@@ -5,3 +5,5 @@ export { default as Section } from './Section';
 export { default as SectionHeader } from './SectionHeader';
 export { default as Category } from './Category';
 export { default as SubCategory } from './SubCategory';
+export { default as FeaturedCategory } from './FeaturedCategory';
+export { default as Footer } from './Footer';

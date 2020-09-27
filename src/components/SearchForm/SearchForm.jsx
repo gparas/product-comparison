@@ -10,7 +10,7 @@ import useStyles from './styles';
 const SearchForm = ({ placeholder }) => {
   const classes = useStyles();
   return (
-    <Paper component="form" className={classes.root}>
+    <Paper component="form" className={classes.root} elevation={0}>
       <IconButton type="submit" aria-label="search">
         <SearchIcon />
       </IconButton>
@@ -24,6 +24,7 @@ const SearchForm = ({ placeholder }) => {
         color="primary"
         variant="contained"
         aria-label="search"
+        className={classes.button}
       >
         Search
       </Button>

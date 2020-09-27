@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import { Section, SectionHeader, Category } from '../../components';
 
-const Categories = ({ header }) => {
+const Categories = ({ header, gutterBottom }) => {
   return (
-    <Section>
+    <Section dense gutterBottom={gutterBottom}>
       <SectionHeader
         header={header}
         subheader="A quick description about the popular categories"
@@ -18,6 +19,11 @@ const Categories = ({ header }) => {
       </Grid>
     </Section>
   );
+};
+
+Categories.propTypes = {
+  header: PropTypes.string,
+  gutterBottom: PropTypes.bool,
 };
 
 export default Categories;

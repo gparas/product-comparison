@@ -13,11 +13,11 @@ import useStyles from './styles';
 import C from './constants';
 
 const ICON_COMPONENTS = {
-  [C.ICONS.COPY]: Copy,
-  [C.ICONS.ARCHIVE]: Archive,
-  [C.ICONS.SHOPPING_BAG]: ShoppingBag,
-  [C.ICONS.MESSAGE_SQUARE]: MessageSquare,
-  [C.ICONS.ARROW_UP_CIRCLE]: ArrowUpCircle,
+  [C.ICONS.SUB_CATEGORIES]: Copy,
+  [C.ICONS.PRODUCTS]: Archive,
+  [C.ICONS.BRANDS]: ShoppingBag,
+  [C.ICONS.COMMNETS]: MessageSquare,
+  [C.ICONS.VOTES]: ArrowUpCircle,
 };
 
 const IconText = ({ icon, children }) => {

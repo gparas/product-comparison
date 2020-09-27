@@ -7,6 +7,10 @@ const useStyles = makeStyles(
       display: 'flex',
       alignItems: 'stretch',
       maxWidth: 600,
+      borderRadius: 4,
+    },
+    button: {
+      borderRadius: 4,
     },
     input: {
       flexGrow: 1,

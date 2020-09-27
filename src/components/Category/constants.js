@@ -2,17 +2,17 @@ import C from '../IconText/constants';
 
 const DETAILS = [
   {
-    icon: C.ICONS.ARCHIVE,
+    icon: C.ICONS.PRODUCTS,
     count: 24,
     text: 'products',
   },
   {
-    icon: C.ICONS.SHOPPING_BAG,
+    icon: C.ICONS.BRANDS,
     count: 9,
     text: 'brands',
   },
   {
-    icon: C.ICONS.COPY,
+    icon: C.ICONS.SUB_CATEGORIES,
     count: 12,
     text: 'sub-categories',
   },

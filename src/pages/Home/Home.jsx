@@ -1,8 +1,9 @@
 import React from 'react';
-import { Hero } from '../../components';
+import { Hero, Footer } from '../../components';
 import HeroContent from './Hero.jsx';
 import Categories from './Categories';
 import SubCategories from './SubCategories';
+import FeaturedCategories from './FeaturedCategories';
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
       </Hero>
       <Categories header="Popular categories" />
       <SubCategories header="Popular sub-categories" />
-      <Categories header="New categories" />
+      <Categories header="New categories" gutterBottom />
+      <FeaturedCategories header="Featured categories" />
+      <Footer />
     </>
   );
 };

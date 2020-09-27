@@ -12,7 +12,7 @@ const ProductList = () => {
   return (
     <List disablePadding>
       {C.LIST.map((item, index) => (
-        <ListItem divider={C.LIST[index + 1]} key={index}>
+        <ListItem divider={Boolean(C.LIST[index + 1])} key={index}>
           <ListItemAvatar>
             <Avatar variant="rounded">P</Avatar>
           </ListItemAvatar>
