@@ -11,7 +11,7 @@ import C from './constants';
 const NavBar = ({ ...other }) => {
   const classes = useStyles();
   return (
-    <AppBar elevation={0} {...other}>
+    <AppBar className={classes.root} elevation={0} {...other}>
       <Container>
         <Toolbar disableGutters>
           <Logo />

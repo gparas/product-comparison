@@ -1,23 +1,21 @@
-import C from '../IconText/constants';
-
 const DETAILS = [
   {
-    icon: C.ICONS.PRODUCTS,
+    icon: 'products',
     count: 8,
     text: 'products',
   },
   {
-    icon: C.ICONS.BRANDS,
+    icon: 'brands',
     count: 6,
     text: 'brands',
   },
   {
-    icon: C.ICONS.COMMNETS,
+    icon: 'commnets',
     count: 16,
     text: 'commnets',
   },
   {
-    icon: C.ICONS.VOTES,
+    icon: 'votes',
     count: 29,
     text: 'votes',
   },

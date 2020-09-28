@@ -1,9 +1,14 @@
+import { fade } from '@material-ui/core/styles/colorManipulator';
+
+const brandColor = '#2F6966';
+
 const light = {
   background: {
     default: '#FFFFFF',
   },
   text: {
-    secondary: '#9F9F9F',
+    primary: '#484848',
+    secondary: '#717171',
   },
   divider: '#F2F2F2',
 };
@@ -19,7 +24,11 @@ const types = { dark, light };
 
 export default {
   primary: {
-    main: '#2F6966',
+    main: brandColor,
+  },
+  secondary: {
+    main: fade(brandColor, 0.1),
+    contrastText: brandColor,
   },
   type: type,
   ...types[type],

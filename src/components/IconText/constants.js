@@ -1,9 +1,9 @@
 const ICONS = {
-  SUB_CATEGORIES: 'SUB_CATEGORIES',
-  PRODUCTS: 'PRODUCTS',
-  BRANDS: 'BRANDS',
-  COMMNETS: 'COMMNETS',
-  VOTES: 'VOTES',
+  sub_categories: 'sub_categories',
+  products: 'products',
+  brands: 'brands',
+  commnets: 'commnets',
+  votes: 'votes',
 };
 
 export default {

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
-import { NavBar } from '../../components';
+import { NavBar, Footer } from '../../components';
 
 const MainLayout = () => {
   return (
     <>
-      <NavBar position="relative" />
+      <NavBar color="secondary" position="relative" />
       <Container>
         <Outlet />
       </Container>
+      <Footer />
     </>
   );
 };

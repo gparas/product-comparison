@@ -13,11 +13,11 @@ import useStyles from './styles';
 import C from './constants';
 
 const ICON_COMPONENTS = {
-  [C.ICONS.SUB_CATEGORIES]: Copy,
-  [C.ICONS.PRODUCTS]: Archive,
-  [C.ICONS.BRANDS]: ShoppingBag,
-  [C.ICONS.COMMNETS]: MessageSquare,
-  [C.ICONS.VOTES]: ArrowUpCircle,
+  [C.ICONS.sub_categories]: Copy,
+  [C.ICONS.products]: Archive,
+  [C.ICONS.brands]: ShoppingBag,
+  [C.ICONS.commnets]: MessageSquare,
+  [C.ICONS.votes]: ArrowUpCircle,
 };
 
 const IconText = ({ icon, children }) => {
@@ -38,7 +38,13 @@ const IconText = ({ icon, children }) => {
 };
 
 IconText.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.oneOf([
+    'sub_categories',
+    'products',
+    'brands',
+    'commnets',
+    'votes',
+  ]),
   children: PropTypes.node,
 };
 
