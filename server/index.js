@@ -1,17 +1,33 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-const url = `mongodb+srv://root:${process.env.REACT_APP_MONGODB_PASSWORD}@cluster0.csqu9.mongodb.net/test?retryWrites=true`;
+const categoryRoutes = require('./routes/category');
 
-const apiroutes = require('./routes');
+app.use(
+  express.urlencoded({
+    extended: false,
+  })
+);
 
-app.use('/', apiroutes);
+app.use(express.json());
+
+app.use('/', categoryRoutes);
+
+app.get('/', (req, res, next) => {
+  res.send('running node-api');
+});
 
 mongoose
-  .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(
+    `mongodb+srv://root:${process.env.MONGO_PASSWORD}@cluster0.csqu9.mongodb.net/test?retryWrites=true`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
-    app.listen(3000);
-    console.log('database connected');
+    app.listen(3000, console.log('Server started at porst 3000'));
   })
   .catch((err) => console.log(err));
